@@ -1,6 +1,6 @@
 <h1>ExpNo 2 : Implement Depth First Search Traversal of a Graph</h1> 
-<h3>Name: </h3>
-<h3>Register Number:     </h3>
+<h3>Name: Persys freeda J </h3>
+<h3>Register Number: 212224060185  </h3>
 <H3>Aim:</H3>
 <p> To Implement Depth First Search Traversal of a Graph using Python 3.</p>
 <h3>Theory:</h3>
@@ -92,4 +92,35 @@ F H <BR>
 <h3>Result:</h3>
 <hr>
 <p>Thus,a Graph was constructed and implementation of Depth First Search for the same graph was done successfully.</p>
+
+Python 3
+
+# Function to perform DFS traversal
+def dfs(graph, start, visited=None):
+    if visited is None:
+        visited = set()  # To keep track of visited nodes
+
+    # Mark the current node as visited and print it
+    print(start, end=" ")
+    visited.add(start)
+
+    # Recur for all adjacent vertices not yet visited
+    for neighbour in graph[start]:
+        if neighbour not in visited:
+            dfs(graph, neighbour, visited)
+
+# Driver Code
+if __name__ == "__main__":
+    # Representation of graph using adjacency list
+    graph = {
+        0: [1, 2, 3],
+        1: [0, 2],
+        2: [0, 1, 3, 4],
+        3: [0, 2],
+        4: [2]
+    }
+
+    print("Depth First Search traversal starting from node 0:")
+    dfs(graph, 0)
+<img width="655" height="302" alt="image" src="https://github.com/user-attachments/assets/ec6da595-7f5a-4909-a2fe-2811d4b09ae8" />
 
