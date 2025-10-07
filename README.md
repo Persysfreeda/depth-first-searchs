@@ -89,10 +89,6 @@ F H <BR>
 ['0', '1', '2', '3', '4']
 
 <hr>
-<h3>Result:</h3>
-<hr>
-<p>Thus,a Graph was constructed and implementation of Depth First Search for the same graph was done successfully.</p>
-
 Python 3
 
 # Function to perform DFS traversal
@@ -124,3 +120,6 @@ if __name__ == "__main__":
     dfs(graph, 0)
 <img width="655" height="302" alt="image" src="https://github.com/user-attachments/assets/ec6da595-7f5a-4909-a2fe-2811d4b09ae8" />
 
+<h3>Result:</h3>
+<hr>
+<p>Thus,a Graph was constructed and implementation of Depth First Search for the same graph was done successfully.</p>
